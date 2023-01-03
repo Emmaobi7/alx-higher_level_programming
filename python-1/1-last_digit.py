@@ -6,12 +6,6 @@ if number > 0:
 else:
     x = number % -10
 
-
-
-
-
-
-
 if x > 5:
     print("Last digit of {:d} is {:d} and is greater than 5".format(number, x))
 if  x < 6 and x != 0:
