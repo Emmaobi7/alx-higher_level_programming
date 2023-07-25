@@ -1,0 +1,2 @@
+-- creates table
+-- id and name, with id default
