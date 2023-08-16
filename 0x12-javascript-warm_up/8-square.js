@@ -1,4 +1,4 @@
-#!/usr/bin/node
+:wqusr/bin/node
 
 const size = parseInt(process.argv[2]);
 
