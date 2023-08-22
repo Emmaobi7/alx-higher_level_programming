@@ -11,5 +11,6 @@ if __name__ == '__main__':
     var = cur.fetchall()
     for index in var:
         print(index)
+    cur.close()
     db.close()
 
