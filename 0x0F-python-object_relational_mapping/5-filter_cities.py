@@ -13,7 +13,7 @@ if __name__ == '__main__':
     cur = db.cursor()
     query = "SELECT cities.name FROM cities"
     query = query + " INNER JOIN states ON cities.state_id = states.id"
-    query = query + "WHERE states.name = %s ORDER BY cities.id ASC"
+    query = query + " WHERE states.name = %s ORDER BY cities.id ASC"
     cur.execute(query, [sys.argv[4]])
     val = cur.fetchall()
     print(", ".join([row[0] for row in val]))

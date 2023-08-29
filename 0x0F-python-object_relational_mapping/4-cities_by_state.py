@@ -6,9 +6,8 @@ import MySQLdb
 if __name__ == '__main__':
     user = sys.argv[1]
     passwd = sys.argv[2]
-    db = sys.argv[3]
 
-    conn = MySQLdb.connect(user=user, port=3306, passwd=passwd, db=db)
+    conn = MySQLdb.connect(user=user, port=3306, passwd=passwd, db=sys.argv[3])
     cur = conn.cursor()
     cur.execute("SELECT cities.id, cities.name, states.name FROM cities " +
                 "INNER JOIN " +
@@ -18,5 +17,4 @@ if __name__ == '__main__':
     cities = cur.fetchall()
     for city in cities:
         print(city)
-    cur.close()
     conn.close()
