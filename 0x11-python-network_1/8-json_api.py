@@ -24,4 +24,4 @@ if __name__ == '__main__':
         else:
             print('[{}] {}'.format(res_data.get('id'), res_data.get('name')))
     except ValueError as e:
-        print('Not a valid Json')
+        print('Not a valid JSON')
